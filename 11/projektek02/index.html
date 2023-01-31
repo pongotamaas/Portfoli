@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJEKT01 - TESLA - SP</title>
+    <style>
+    body {background-color: rgb(95, 88, 88);}
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 80%;
+            height: auto;
+        }
+
+        .row:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        html {
+            font-family: "Impact";
+        }
+
+        .header {
+            font-family:Impact;
+            background-color: #000000;
+            color: blue;
+            text-shadow: 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 20px
+                    #00d9ff;
+            padding: 15px;
+        }
+        #ff0000
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            font-family:Impact;
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: black;
+            color: rgb(0, 4, 255);
+            text-shadow: 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 20px
+                    #00d9ff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover {
+            background-color: #130161;
+            color: #5016ad;
+        }
+
+        .menu .active li {
+            background-color: #e6dbff;
+            color: #5016ad;
+        }
+
+        .menu a {
+            text-decoration: none;
+        }
+
+        .aside {
+            background-color: #000000;
+            padding: 15px;
+            color: #0011ff;
+            text-align: center;
+            font-family:Impact;
+            text-shadow: 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 20px
+                    #00d9ff;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .footer {
+            background-color: #000000;
+            font-family:Impact;
+            color: #2600ff;
+            text-shadow: 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 20px
+                    #00d9ff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        
+        }
+        
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Szerencsekerék </h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <p>11. évfolyam</p>
+            <ul>
+                <a href="">
+                    <li>Projekt 01: Szerencsekerék </li>
+                </a>
+                <a class="active" href="">
+                    <li>Projekt 02:  Astabil Multivibrátor</li>
+                </a>
+                <a href="">
+                    <li>Projekt 03</li>
+                </a>
+                <a href="">
+                    <li>Projekt 04</li>
+                </a>
+            </ul>
+            <p>12. évfolyam</p>
+            <ul>
+                <a href="">
+                    <li>Projekt 01</li>
+                </a>
+                <a href="">
+                    <li>Projekt 02</li>
+                </a>
+                <a href="">
+                    <li>Projekt 03</li>
+                </a>
+            </ul>
+            <p>13. évfolyam</p>
+            <ul>
+                <a href="">
+                    <li>Projekt 01</li>
+                </a>
+                <a href="">
+                    <li>Projekt 02</li>
+                </a>
+                <a href="">
+                    <li>Projekt 03</li>
+                </a>
+            </ul>
+            <p>----------------</p>
+            <ul>
+                <a href="">
+                    <li>VISSZA</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9">
+            <h1>Astabil Multivibrátor </h1>
+            <p></p>
+            <p></p>
+            <p></p>
+
+            <p> </p>
+
+            <h2>Az általam épített KIT:</h2>
+            <img src="astabil01.jpg" alt="Astabil Multivibrátor" width="400" height="1000">
+
+            <p></p>
+            <p></p>
+            <img src="astabil04.jpg" alt="Astabil Multivibrátor" width="400" height="600">
+            <p>Beszerzési forrás: <a href="http://www.hestore.hu">www.hestore.hu</a> </p>
+
+            <h2 >Működtethető tápegységről vagy akkumulátorról is.
+            </h2>
+            <p>Műszaki adatok:</p>
+            <ul>
+                <li>Működési feszültség: 9v </li>
+            </ul>
+            <p>Az összeszereléshez szükséges még:</p>
+            <ul>
+                <li>forrasztópáka és ón,</li>
+                <li>oldalcsípő fogó,</li>
+                <li>Phillips fejű csavarhúzó</li>
+            </ul>
+
+            <p>Az összeszerelési dokumentációt <a href="https://sandorpeteer.github.io/web/11/minitesla.pdf">innen</a>
+                le lehet letölteni PDF fájlként. </p>
+
+            <h2>A kapcsolási rajza:</h2>
+            <img src="astabil03rajz" alt="Astabil Multivibrátor" width="400" height="600">
+
+            <h2>Az alkatrészek, amiket felhasználtam:</h2>
+            
+            <ul>
+                <li>4db ellenállás</li>
+                <li>2db Kondenzátor</li>
+                <li>2db transistor</li>
+                <li>2db LED</li>
+              </ul>  
+              <h2>Az értékei az elkatrészeknek</h2>
+              <ol>
+                <li>R1 = 675 ohm</li>
+                <li>R2 = 670 ohm</li>
+                <li>R3 = 29.62 ohm</li>
+                <li>R4 = 29.52 ohm</li>
+                <li>2* 47 microfarad</li>
+              </ol>
+            <br>
+
+            <h2>Az Astabil Multivibrátorom kész állapotában:</h2>
+              
+                <img style="width: 48%;" src="astabil05.jpg" alt="multivibrátor"  >
+                <img style="width: 48%;" src="astabil06.jpg" alt="multivibrátor" >
+            
+            <h2>A forrasztási oldalról egy fénykép:</h2>
+            <img style="width: 48%;" src="astabil02.jpg" alt="" width="400" height="1000">
+
+            <h2>Élmények</h2>
+            <p>Én nagyon vártam amikor meg kaptuk a feladatot. A kapcsolási rajzot az elején kicsit nehéz volt értelmezni de a végére szerncsére egy nagyon jó projekt sikerűlt belőle és nagyon örűltem hogy megtutdtam csinálni</p>
+            
+            <h2>Tapasztalatok</h2>
+            <p>Én azt tapasztaltam a feladar során hogy nem szabad kapkodni és mindent inkább kétszer megnézni, hogy biztos oda kell e rakni mert elég csak egy kicsit hibázni és az egész zárlatos lessz</p>
+
+            <p id="sp">Az áramkört készítettem: 2023.01.20.</p>
+            <p>Több információért keresd fel ezt az oldalt: <a
+                    href="https://en.wikipedia.org/wiki/Multivibrator">https://en.wikipedia.org/wiki/Multivibrator</a> </p>
+        </div>
+
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>Multivibrátor</h2>
+                <p>A multivibrátor egy elektronikus áramkör , amelyet számos egyszerű kétállapotú  eszköz, például relaxációs oszcillátorok , időzítők , reteszek és flip-flopok megvalósítására használnak .</p>
+                <h2>Főbb paraméterek</h2>
+                <p>Működési feszültség: 9...12V </p>
+                <p>Elkészítési idő: 45 perc</p>
+                <p>Méretek: 50mm x 50mm x 20mm</p>
+                <img src="astabil07.jpg" alt="" width="400" height="1000">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Készítette: Pongó Tamás</p>
+        <p>A projekt megvalósult: 2023.01.26.</p>
+        <p>Helyszín: Miskolci Szakképzési Centrum Kandó Kálmán Informatikai Technikum. </p>
+    </div>
+
+</body>
+
+</html>
